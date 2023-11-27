@@ -61,19 +61,29 @@ Create a New Design File:
       • Give the Input Combinations according to the Truth Table and then simulate the Output waveform
 Program:
 ## Program:
-```
+
 module exp2(A,B,C,D,F1);
+
 input A,B,C,D;
+
 output F1;
+
 wire x1,x2,x3,x4,x5;
+
 assign x1=(~A)&(~B)&(~C)&(~D);
+
 assign x2=(A)&(~C)&(~D);
+
 assign x3=(~B)&(C)&(~D);
+
 assign x4=(~A)&(B)&(C)&(D);
+
 assign x5=(B)&(~C)&(D);
+
 assign F1=x1|x2|x3|x4|x5;
+
 endmodule 
-```
+
 ## RTL realization
 ![exp2RTL viewer](https://github.com/Lokesh23001615/Experiment--02-Implementation-of-combinational-logic-/assets/144979337/8cb19ac6-91a6-42f5-a7c9-6caf9c2570a6)
 
